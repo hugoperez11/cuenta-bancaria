@@ -55,5 +55,20 @@ public class Account {
         this.monthlyFee = monthlyFee;
     }
 
-    
+    public void deposit(float amount) {
+        if (amount > 0) {
+            balance += amount;
+            numDeposits++;
+        }
+    }
+
+    public void withdraw(float amount) {
+        if(amount > 0 && amount <= balance){
+            balance-= amount;
+            numWitdrawals++;           
+     }else{
+        throw new IllegalArgumentException("Error: Can not withdraw amount bigger than balance");
+     }
+    }
+
 }
