@@ -81,9 +81,9 @@ public class Account {
     }
 
     public void monthlyStatement() {       
-
-        calculateMonthlyInterest();
         balance -= monthlyFee;
+        calculateMonthlyInterest();
+        
     }
 
 

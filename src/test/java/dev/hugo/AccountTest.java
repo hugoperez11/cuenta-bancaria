@@ -115,7 +115,7 @@ public class AccountTest {
         account.monthlyFee = 10.0f;
         account.monthlyStatement();
 
-        assertThat(account.getBalance(), is(1196.0f));
+        assertThat(account.getBalance(), is(1195.95F));
     }
 
     @Test
